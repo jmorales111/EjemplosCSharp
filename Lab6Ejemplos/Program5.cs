@@ -82,6 +82,11 @@ namespace Lab6Ejemplos
                 Console.WriteLine(i);
             }
 
+            for (int k = 0; k <10; k++)
+            {
+                Console.WriteLine(k * 2);
+            }
+
             Console.WriteLine("Fin");
 
         }
