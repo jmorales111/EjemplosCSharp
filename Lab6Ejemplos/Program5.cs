@@ -69,6 +69,7 @@ namespace Lab6Ejemplos
             ref int numRef1 = ref datos[2];
             numRef1++;
             Console.WriteLine("Segunda celda: " + datos[2]); // 3
+            Console.WriteLine("Fin");
 
 
 
