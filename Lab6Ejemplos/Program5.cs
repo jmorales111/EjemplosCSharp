@@ -5,6 +5,8 @@ namespace Lab6Ejemplos
 {
     public class Program5
     {
+        static string x = "Valor Anterior";
+
         public static void Main(string[] args) {
             Console.WriteLine("Program5");
             // Paso por valor con una literal
@@ -69,15 +71,13 @@ namespace Lab6Ejemplos
             ref int numRef1 = ref datos[2];
             numRef1++;
             Console.WriteLine("Segunda celda: " + datos[2]); // 3
+
+            //C#7 Ref Returns
+            ref string xRef = ref GetX();
+            xRef = "Valor Nuevo";
+            Console.WriteLine("xRef: " + xRef);
+
             Console.WriteLine("Fin");
-
-
-
-
-
-
-
-
 
         }
 
@@ -136,7 +136,8 @@ namespace Lab6Ejemplos
             Console.WriteLine("Foo4:" +x + "," + y + "," +w +","+ z);
         }
 
-
+        // Metodo que regresa una referencia
+        static ref string GetX() => ref x;
 
     }
 }
