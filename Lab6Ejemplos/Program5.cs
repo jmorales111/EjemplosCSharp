@@ -77,6 +77,11 @@ namespace Lab6Ejemplos
             xRef = "Valor Nuevo";
             Console.WriteLine("xRef: " + xRef);
 
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+
             Console.WriteLine("Fin");
 
         }
